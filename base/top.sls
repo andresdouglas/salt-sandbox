@@ -1,3 +1,7 @@
 base:
-  'salt.*':
-    - helloworld
+  '*':
+    - base
+
+  'minion*':
+    - mongodb.apt
+    - mongodb
